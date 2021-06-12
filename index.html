@@ -18,8 +18,8 @@
   <header>
     <img src="images/header.png" alt="header">
   </header>
-  <nav class="nav_bar">
-    <div class="nav_bar_wrapper wrapper">
+  <nav class="fukuyama_top_navbar">
+    <div class="navbar_wrapper wrapper">
       <ul class="nav_list">
         <li><a href="#">მთავარი</a></li>
         <li><a href="#">ჩვენს შესახებ</a></li>
@@ -64,7 +64,7 @@
         <div class="news_item">
           <div class="news_img">
             <img src="images/news_1.png" alt="news_img">
-            <a class="read_more overlay">
+            <a class="news_more overlay">
               <span href="#">იხილეთ ვრცლად </span>
             </a>
           </div>
@@ -77,7 +77,7 @@
       <div class="content_container">
 
         <div class="title_wrapper">
-          <h2 class="content_title title-light">ჟურნალი</h2>
+          <h2 class="content_title title_light">ჟურნალი</h2>
           <a class="see_all_light" href="#">ყველა სიახლე</a>
         </div>
 
@@ -95,7 +95,7 @@
     <section class="fukuyama_activities">
       <div class="content_container">
         <div class="title_wrapper">
-          <h2 class="content_title title-dark">აქტივობები</h2>
+          <h2 class="content_title title_dark">აქტივობები</h2>
           <a class="see_all_dark" href="#">ყველა სიახლე</a>
         </div>
 
@@ -111,11 +111,21 @@
     <section class="fukuyama_club">
       <div class="content_container">
         <div class="title_wrapper">
-          <h2 class="content_title title-dark">კლუბი</h2>
-          <a class="see_all see_all_dark" href="#">ყველა სიახლე</a>
+          <h2 class="content_title title_dark">კლუბი</h2>
+          <a class="see_all_dark" href="#">ყველა სიახლე</a>
         </div>
 
-        <div>
+        <div class="club_item">
+          <div class="club_img">
+            <img src="images/club_img_1.png" alt="">
+          </div>
+
+          <div class="club_info">
+            <span class="club_date">04/2020-09/2020</span>
+            <h3 class="title_cut">საქართველოს მთავრობის მხარდაჭერა კოვიდ-19-ის შედეგების შესამსუბუქებლად, ინკულუზიური და მტკიცებულებებზე დაფუძნებული მმართველობის ხელშეწყობის გზით</h3>
+            <span class="read_more_bg_blue"><a href="#">იხილეთ ვრცლად <img src="images/arrow_white.svg"
+                  alt="arrow_icon"></a></span>
+          </div>
 
         </div>
       </div>
@@ -124,7 +134,7 @@
     <section class="fukuyama_publishing">
       <div class="content_container">
         <div class="title_wrapper">
-          <h2 class="content_title title-light">გამომცემლობა</h2>
+          <h2 class="content_title title_light">გამომცემლობა</h2>
           <a class="see_all_light" href="#">ყველა სიახლე</a>
         </div>
 
@@ -134,7 +144,18 @@
               <img src="images/publishing_1.png" alt="piblishing_img">
             </div>
             <span class="author">DAVID RANDALL</span>
-            <h3 class="publishing_info title_cut">ატმოსფეროს გლობალური ცირკულაციის შესავალი</h3>
+            <h3 class="title_cut">ატმოსფეროს გლობალური ცირკულაციის შესავალი</h3>
+          </div>
+          <a class="publishing_more" href="#"><img src="images/arrow-left.svg" alt="arrow_icon"> </a>
+        </div>
+
+        <div class="publishing_item">
+          <div class="publishing_item_container">
+            <div class="publishing_img">
+              <img src="images/publishing_1.png" alt="piblishing_img">
+            </div>
+            <span class="author">DAVID RANDALL</span>
+            <h3 class="title_cut">ატმოსფეროს გლობალური ცირკულაციის შესავალი</h3>
           </div>
           <a class="publishing_more" href="#"><img src="images/arrow-left.svg" alt="arrow_icon"> </a>
         </div>
@@ -144,8 +165,8 @@
     <section class="fukuyama_video_gallery">
       <div class="content_container">
         <div class="title_wrapper">
-          <h2 class="content_title title-dark">ვიდეო გალერეა</h2>
-          <a class="see_all see_all_dark" href="#">ყველა სიახლე</a>
+          <h2 class="content_title title_dark">ვიდეო გალერეა</h2>
+          <a class="see_all_dark" href="#">ყველა სიახლე</a>
         </div>
 
         <div class="gallery_item">
@@ -160,7 +181,7 @@
             <img class="gallery_img" src="images/gallery_img_01.png" alt="gallery_img">
             <div class="overlay_bg"></div>
           </div>
-          <h3 class="gallery_info title_cut">თბილისში „დემოკრატიის ფრონტისპირა ცენტრი“ დაფუძნდა</h3>
+          <h3 class="title_cut">თბილისში „დემოკრატიის ფრონტისპირა ცენტრი“ დაფუძნდა</h3>
         </div>
       </div>
     </section>
@@ -168,8 +189,8 @@
     <section class="fukuyama_photo_gallery">
       <div class="content_container">
         <div class="title_wrapper">
-          <h2 class="content_title title-dark">ფოტო გალერეა</h2>
-          <a class="see_all see_all_dark" href="#">ყველა სიახლე</a>
+          <h2 class="content_title title_dark">ფოტო გალერეა</h2>
+          <a class="see_all_dark" href="#">ყველა სიახლე</a>
         </div>
 
         <div class="gallery_item">
@@ -177,33 +198,48 @@
             <img class="gallery_img" src="images/photo_gallery_1.png" alt="gallery_img">
             <div class="overlay_bg"></div>
           </div>
-          <h3 class="gallery_info title_cut">მედია ტური ქართველი ჟურნალისტებისთვის შვედეთში, დღე მესამე</h3>
+          <h3 class="title_cut">მედია ტური ქართველი ჟურნალისტებისთვის შვედეთში, დღე მესამე</h3>
         </div>
       </div>
     </section>
 
-    <nav class="bottom_nav_bar">
-      <div class="wrapper">
-        <ul class="nav_list">
-          <li><a href="">მთავარი</a></li>
-          <li><a href="">ჩვენს შესახებ</a></li>
-          <li><a href="">სიახლეები</a></li>
-          <li><a href="">აქტივობები</a></li>
-          <li><a href="">კლუბი</a></li>
-          <li><a href="">გამომცემლობა</a></li>
-          <li><a href="">პუბლიკაცია</a></li>
-          <li><a href="">ფოტო</a></li>
-          <li><a href="">ვიდეო</a></li>
-        </ul>
-        <ul class="nav_list">
-          <li><a href=""> <i class="fab fa-youtube"></i> Youtube</a></li>
-          <li><a href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
-          <li><a href=""><i class="fab fa-twitter"></i> Twitter</a></li>
-        </ul>
-      </div>
-    </nav>
+    <section class="fukuyama_publication">
+      <div class="content_container">
+        <div class="title_wrapper">
+          <h2 class="content_title title_dark">პუბლიკაციები</h2>
+          <a class="see_all_dark" href="#">ყველა სიახლე</a>
+        </div>
 
+        <div class="publication_item">
+         <div class="publication_img">
+           <img src="images/publication_1.png" alt="publication_img">
+         </div>
+         <h3 class="title_cut">ცოცხალი დედამიწის საზოგადოება</h3>
+        </div>
+    </section>
   </main>
+
+  <nav class="fukuyama_bottom_navbar">
+    <div class="wrapper">
+      <img class="bottom_navbar_logo" src="images/Group 7085.png" alt="logo-img">
+      <ul class="bottom_navbar">
+        <li><a href="">მთავარი</a></li>
+        <li><a href="">ჩვენს შესახებ</a></li>
+        <li><a href="">სიახლეები</a></li>
+        <li><a href="">აქტივობები</a></li>
+        <li><a href="">კლუბი</a></li>
+        <li><a href="">გამომცემლობა</a></li>
+        <li><a href="">პუბლიკაცია</a></li>
+        <li><a href="">ფოტო</a></li>
+        <li><a href="">ვიდეო</a></li>
+      </ul>
+      <ul class="fukuyama_social">
+        <li><a href=""> <img src="images/youtube.svg" alt=""> </i> Youtube</a></li>
+        <li><a href=""> <img src="images/fb.svg" alt=""> Facebook</a></li>
+        <li><a href=""> <img src="images/Twitter.svg" alt=""> Twitter</a></li>
+      </ul>
+    </div>
+  </nav>
 </body>
 
 </html>
