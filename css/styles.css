@@ -38,13 +38,15 @@ header{
   color: var(--white-color);
   font-family: var(--font-mtavruli);
   height: 100px;
+  position: relative;
+  z-index: 2;
 }
 
 .navbar_wrapper{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100%
+  height: 100%;
 }
 
 .nav_list{
@@ -157,28 +159,28 @@ header{
   transition: .5s ease;
 }
 
-.heading_news{
+.heading_slide{
   text-align: center;
 }
 
-.heading_news_wrapper{
+.heading_slide_wrapper{
   position: relative;
   top: -100px;
-  z-index: -1;
+  z-index: 1;
 }
 
-.heading_news_img{
+.heading_slide_img{
  width: 100%;
 }
 
-.heading_news_description{
+.heading_slide_description{
   font-family: var(--font-mtavruli);
   max-width: 1000px;
   margin: auto;
   padding:0 20px;
 }
 
-.heading_news_title{
+.heading_slide_description h3{
   font-size: 30px;
   color: var(--main-color);
   line-height: 37px;
@@ -221,7 +223,6 @@ header{
   padding:125px 30px;
   font-family:var(--font-mtavruli);
   gap: 30px;
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -236,7 +237,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -245,24 +246,16 @@ header{
   margin: 0;
 }
 
-.title_dark{
-  color: var(--main-color);
-}
-
-.title_light{
-  color: var(--hover-color);
-}
-
 .title_wrapper a{
   font-size: 20px;
   text-decoration: none;
-  font-weight: 600;
   display: flex;
   align-items: center;
 }
 
 .see_all_dark{
   color: var(--main-color);
+  font-weight: 600;
 }
 
 .see_all_light{
@@ -289,6 +282,10 @@ header{
 
 .title_wrapper a:hover.see_all_dark::after {
   content: url('../images/arrow_light-blue.svg');
+}
+
+.fukuyama_news .content_title{
+  color: var(--main-color);
 }
 
 .fukuyama_news .news_item{
@@ -398,6 +395,9 @@ header{
   background-color: var(--main-color);
 }
 
+.fukuyama_journal .content_title{
+  color: var(--hover-color);
+}
 
 .fukuyama_journal .journal_item{
   overflow: hidden;
@@ -461,6 +461,10 @@ header{
 .fukuyama_activities{
   background: url('../images/fukuyama_bg_light.svg') no-repeat;
   background-size: cover;
+}
+
+.fukuyama_activities .content_title{
+  color: var(--main-color);
 }
 
 .fukuyama_activities .activities_item{
@@ -528,6 +532,9 @@ header{
   color: var(--white-color);
 }
 
+.fukuyama_club .content_title{
+  color: var(--main-color);
+}
 
 .fukuyama_club .club_item{
     width: calc(50% - 15px);
@@ -616,9 +623,16 @@ header{
   display: block;
 }
 
-
 .fukuyama_publishing{
   background-color: var(--main-color);
+}
+
+.fukuyama_publishing .title_wrapper{
+  margin-bottom: 35px;
+}
+
+.fukuyama_publishing .content_title{
+  color: var(--hover-color);
 }
 
 .fukuyama_publishing .publishing_item{
@@ -627,49 +641,51 @@ header{
 
 .publishing_item{
   font-family: var(--font-mtavruli);
-  background: url('../images/publishing_bg.svg') no-repeat;
+  background: linear-gradient(0deg, rgba(49,64,72,1) 0%, rgba(86,158,172,1) 50%, rgba(44,58,64,1) 100%);
   background-size: cover;
   position: relative;
-  transition: .5s ease;
   border-radius: 8px;
   height: 715px;
+  padding:0 60px;
+  transition: .2s;
+  bottom: 0;
 }
 
 .publishing_item:hover{
-  transform: translateY(50px);
   height: 600px;
+  bottom: -115px;
+  transition: .2s;
 }
 
-.publishing_item_container{
+.publishing_container{
   position: absolute;
-  padding: 50px 0;
-  top:0;
-  left: 50%;
-  transform: translateX(-50%);
+  top:50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-between;
   text-align: center;
   overflow: hidden;
-  height: 100%;
-  transition: .5s ease;
+  transition: .2s;
 }
 
-.publishing_item:hover .publishing_item_container{
-  top: -100px;
-  padding-top: 0;
+.publishing_item:hover .publishing_container{
+  top: -115px;
+  transition: .2s;
 }
 
 .publishing_img{
   height: 460px;
   width: 350px;
+  box-shadow: 0px 3px 6px #00000029;
+  margin-bottom: 20px;
 }
 
 .publishing_img img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .author{
@@ -694,10 +710,8 @@ header{
   transform: translateX(-50%);
 }
 
-
 .publishing_item:hover .publishing_more{
   visibility: visible;
-  margin-top: 35px;
 }
 
 .fukuyama_video_gallery{
@@ -707,6 +721,10 @@ header{
 
 .fukuyama_video_gallery .gallery_item{
   width: calc(33.33% - 20px);
+}
+
+.fukuyama_video_gallery .content_title{
+  color: var(--main-color);
 }
 
 .gallery_item{
@@ -721,6 +739,7 @@ header{
 }
 
 .gallery_img_wrapper{
+  display: block;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
@@ -771,6 +790,10 @@ header{
   content: url('../images/video_icon_hover.svg');
 }
 
+.fukuyama_photo_gallery .content_title{
+  color: var(--main-color);
+}
+
 .fukuyama_photo_gallery .gallery_item{
   width: calc(25% - 22.5px);
 }
@@ -796,6 +819,10 @@ header{
   background-size: cover;
 }
 
+.fukuyama_publication .content_title{
+  color: var(--main-color);
+}
+
 .fukuyama_publication .publication_item{
   width: calc(25% - 22.5px);
   text-align: center;
@@ -804,6 +831,7 @@ header{
 
 .fukuyama_publication .publication_img{
   height: 515px;
+  display: block;
 }
 
 .publication_img{
@@ -847,9 +875,8 @@ header{
 
 .bottom_navbar_logo{
   position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: -150px;
+  left: 700px;
 }
 
 .fukuyama_bottom_navbar a{
