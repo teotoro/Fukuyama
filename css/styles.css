@@ -965,6 +965,7 @@ html, body{
 
 .fukuyama_aboutus p{
   margin: 0;
+  font-size: 18px;
 }
 
 /* fukuyama activities page */
@@ -984,6 +985,7 @@ html, body{
 
 .fukuyama_activities p{
   margin: 0;
+  font-size: 18px;
 }
 
 .activities_list_title{
@@ -1040,6 +1042,7 @@ html, body{
 
 .club_content p{
   margin: 0;
+  font-size: 18px;
 }
 
 .club_reg{
@@ -1064,4 +1067,57 @@ html, body{
 .club_reg:hover{
   background-color: #3C89AB;
   transition: .6s ease;
+}
+
+/* single page  */
+
+.fukuyama_singlepage{
+  padding: 120px 0 290px;
+}
+
+.fukuyama_singlepage p{
+  margin: 0;
+}
+
+.singlepage_content_wrapper{
+  max-width: 1215px;
+  padding: 0 30px;
+  margin: auto;
+  color: var(--main-color);
+  font-family: var(--font-arial);
+}
+
+.img_left{
+  width: 40%;
+  margin-right: 20px;
+  float: left;
+}
+
+.img_right{
+  width: 40%;
+  margin-left: 20px;
+  float: right;
+}
+
+.img_left img, .img_right img{
+  width: 100%;
+  border-radius: 7px;
+}
+
+.singlepage_content{
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgba(75, 167, 207, 0.30);
+}
+
+.singlepage_social{
+  font-family: var(--font-mtavruli);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.singlepage_social span{
+  margin-right: 20px;
+  font-weight: 600;
 }
