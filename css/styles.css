@@ -458,16 +458,16 @@ html, body{
 }
 
 
-.fukuyama_activities{
+.fukuyama_activities_homepage{
   background: url('../images/fukuyama_bg_light.svg') no-repeat;
   background-size: cover;
 }
 
-.fukuyama_activities .content_title{
+.fukuyama_activities_homepage .content_title{
   color: var(--main-color);
 }
 
-.fukuyama_activities .activities_item{
+.fukuyama_activities_homepage .activities_item{
   width: calc(50% - 15px);
 }
 
@@ -532,11 +532,11 @@ html, body{
   color: var(--white-color);
 }
 
-.fukuyama_club .content_title{
+.fukuyama_club_homepage .content_title{
   color: var(--main-color);
 }
 
-.fukuyama_club .club_item{
+.fukuyama_club_homepage .club_item{
     width: calc(50% - 15px);
 }
 
@@ -615,7 +615,7 @@ html, body{
   margin-bottom: 35px;
 }
 
-.fukuyama_club .read_more_bg_blue{
+.fukuyama_club_homepage .read_more_bg_blue{
   display: none;
 }
 
@@ -834,16 +834,15 @@ html, body{
 
 .fukuyama_publication .publication_item{
   width: calc(25% - 22.5px);
+}
+ 
+.publication_item{
   text-align: center;
 }
 
-
-.fukuyama_publication .publication_img{
+.publication_img{
   height: 515px;
   display: block;
-}
-
-.publication_img{
   padding: 15px;
   overflow: hidden;
   border-radius: 8px;
@@ -948,14 +947,14 @@ html, body{
   margin-bottom: 40px;
 }
 
-.aboutus_title_wrapper{
+.content_title_wrapper{
   text-align: center;
   margin-bottom: 40px;
+  font-family: var(--font-mtavruli);
 }
 
 
 .content_subtitle{
-  font-family: var(--font-mtavruli);
   font-size: 22px;
   margin: 40px 0 0;
 }
@@ -966,4 +965,103 @@ html, body{
 
 .fukuyama_aboutus p{
   margin: 0;
+}
+
+/* fukuyama activities page */
+
+.fukuyama_activities_main{
+  padding: 120px 0 245px;
+  color: var(--main-color);
+  font-family: var(--font-arial);
+}
+
+.fukuyama_activities{
+  max-width: 1550px;
+  padding: 0 30px 60px;
+  margin: auto;
+  text-align: center;
+}
+
+.fukuyama_activities p{
+  margin: 0;
+}
+
+.activities_list_title{
+  padding: 25px 50px;
+  width: 100%;
+  background-color: rgba(75, 167, 207, 0.18);
+  font-size: 24px;
+  margin: 0 0 30px;
+}
+
+.activities_list{
+  max-width: 1550px;
+  padding: 0 30px;
+  margin: auto;
+}
+
+.activities_list .content_container{
+  padding:0 0 125px;
+}
+
+.activities_list .publication_item{
+  width: calc(25% - 22.5px);
+}
+
+.activities_list .news_item{
+  width: calc(33.33% - 20px);
+}
+
+.activities_list .gallery_item {
+  width: calc(33.33% - 20px);
+}
+
+.activities_list .video_item {
+  width: calc(25% - 22.5px);
+}
+
+/* fukuyama club page */
+
+.fukuyama_club_main{
+  padding: 120px 0 290px;
+}
+
+.fukuyama_club{
+  max-width: 1215px;
+  padding: 0 30px;
+  margin: auto;
+  color: var(--main-color);
+  font-family: var(--font-arial);
+}
+
+.fukuyama_club>*:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.club_content p{
+  margin: 0;
+}
+
+.club_reg{
+  border: 1px solid #4BA7CF;
+  font-size: 20px;
+  font-family: var(--font-mtavruli);
+  background-color: var(--hover-color);
+  padding: 13px 22px;
+  color:var(--white-color);
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+  border-radius: 117px;
+  margin: 60px auto 0;
+  cursor: pointer;
+}
+
+.club_reg img{
+  margin-right: 40px;
+}
+
+.club_reg:hover{
+  background-color: #3C89AB;
+  transition: .6s ease;
 }
