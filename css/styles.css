@@ -747,7 +747,6 @@ html, body{
 
 .gallery_img_wrapper{
   display: block;
-  border-radius: 8px;
   overflow: hidden;
   position: relative;
   border-radius: 8px;
@@ -1102,6 +1101,7 @@ html, body{
 .img_left img, .img_right img{
   width: 100%;
   border-radius: 7px;
+  margin-top: 10px;
 }
 
 .singlepage_content{
